@@ -15,7 +15,7 @@ body{
           background-image: url('image/dog6.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed;
-          background-size: 80%;
+          background-size: 100%;
         }
 .name{
         color: black;
