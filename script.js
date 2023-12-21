@@ -83,19 +83,49 @@ function getSelected() {
     return answer
 }
 
+let first=0
+let second=0
+let third=0
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
+    if(answer=='a')
+    {
+            first++
+    }
+    if(answer=='b')
+    {
+            second++
+    }
+    if(answer=='c')
+    {
+            third++
+    }
+
+let preference=[]
+if(a>b && a>c)
+{
+    preference=['Golden Retriever', 'Labrodor']
+}
+if(b>a && b>c)
+{
+    preference=['Husky', 'Pomerian']
+}
+if(c>b && c>a)
+{
+    preference=['Shitzu', 'Labrodor']
+}
+
     if(answer) {
        currentQuiz++
        if(currentQuiz < quizData.length) {
            loadQuiz()
        } else {
            quiz.innerHTML = `
-           <h2>The dog breed recommendations for you are a Golden Retriever, Beagle, Poodle, Bullgod</h2> 
-           <button onclick="location.reload()">Reload</button>   
+           <h2>Thank You for taking the quiz</h2>
+           <h2> The dog breed recommendations for you are a Golden Retriever, Beagle, Poodle, Bullgod </h2>
+           <button onclick="location.reload()">Reload</button>    `
        }  
     }
 })
-
 
