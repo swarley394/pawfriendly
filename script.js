@@ -125,7 +125,6 @@ if(c>b && c>a)
            <h2>Thank You for taking the quiz</h2>
            <h2> The dog breed recommendations for you are a Golden Retriever, Beagle, Poodle, Bullgod </h2>
            <button onclick="location.reload()">Reload</button> 
-           <button onclick="registeration.html">Register now!</button> 
        }  
     }
 })
